@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex">
+        <div class="width settings">
+            <div class="logo bold"><a href="index.html">LOGO</a></div>
+            <div class="nav_text bold">
+                <span>HOME</span>
+                <span>ABOUT US</span>
+                <span>HELP</span>
+                <span>OUR LOCATIONS</span>
+                <span>SERVICES</span>
+            </div>
+        </div>
+    </nav>
+    <div class="width">
+        <h1 id="greet" class="bold">WELCOME, TO LOAN SHARK</h1>
+    </div>
+    <form class="width " id="form">
+        <div class="flex_d">
+            <div class="first_input">
+                <input type="number" id="balance" placeholder="Enter Account Balance" required>
+                <input type="number" id="loanAmt" placeholder="Enter Loan Amount">    
+            </div>
+            <span id="empty1"></span>
+        </div>
+        <div class="flex_d">
+            <select name="history" id="history">
+                <option value="0">Select last Loan Plan</option>
+                <option value="1">3 months</option>
+                <option value="2">6 months</option>
+                <option value="3">9 months</option>
+                <option value="4">12 months or more</option>
+            </select>
+            <span id="empty2"></span>       
+
+        </div>
+        <div class="flex hy settings">
+                <div class="flex_d hh ">
+                    <span class="bold">*Last Deposit</span>
+                    <input type="date" id="depositDate">
+                </div>
+                <div class="flex_d hh">
+                    <span class="bold">*Last Loan Collection</span>
+                    <input type="date" id="loanDate">
+                </div>
+            </div>
+            <div class="flex_d">
+                <select name="loanPlan" id="plan">
+                    <option value="0">Select Loan Plan</option>
+                    <option value="1">3 months</option>
+                    <option value="2">6 months</option>
+                    <option value="3">9 months</option>
+                    <option value="4">12 months or more</option>
+                </select>
+                <span id="empty3"></span>
+        </div>
+        <div class="flex_d">
+            <select name="accType" id="accType">
+                <option value="0">Select Account type</option>
+                <option value="1">Current account</option>
+                <option value="2">Savings account</option>
+            </select>
+            <span id="empty4"></span>
+        </div>
+        <button type="button" onclick="submitClick()">Submit</button>
+        
+    </form>
+    <div id="text" class="bold"></div>
+    <footer class="settings center">
+
+        <div class="align-items">
+            <span class="bold foot">&copy;LOAN SHARK</span>
+        </div>
+        <div class="foot_text bold">
+            <span>ABOUT US</span>
+            <span>HELP</span>
+            <span>OUR LOCATIONS</span>
+            <span>SERVICES</span>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
